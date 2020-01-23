@@ -1,3 +1,9 @@
+// Jonah Senzel
+// 2020
+// made with p5.js
+
+// A simple sketch playing with fonts
+
 let links;
 
 let childrenToBeDrawn;
@@ -9,6 +15,7 @@ let easeIn = .001;
 
 let over = false;
 
+//TODO: add more fonts from google fonts zip
 let fonts = ["Arial",
   "Helvetica",
   "Gill Sans",
@@ -35,10 +42,13 @@ let fonts = ["Arial",
   "Blippo, fantasy",
   "Brushstroke, fantasy"]
 
+//Finds all link classes and randomizes font
 function allFontsRandom() {
 
+  //Gets all links by class
   links = document.getElementsByClassName("link");
 
+  //cycles through array and randomizes font of each
   for (let i = 0; i < links.length; i++) {
     let rInd = floor(random(0, fonts.length));
     let rFont = fonts[rInd];
@@ -121,12 +131,14 @@ function draw() {
 
 function keyPressed() {
   oneFontRandom();
+
+  //TODO: add sound to keypress
 }
 
 function linkOver(linkEl) {
   over = true;
   // console.log(linkEl);
-  // console.log("Link OVER" + linkEl)
+
   console.log("linkOver");
   console.log(event.target.innerHTML)
 
@@ -144,7 +156,7 @@ function linkOver(linkEl) {
 
       size: random(5, 30),
 
-      greyScale: random(0, 50)
+      greyScale: random(255)
 
     }
 
