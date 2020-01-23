@@ -1,0 +1,47 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+canvas {
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li  {
+
+  display: inline;
+  text-emphasis: center;
+  align-items: center;
+  padding: 5%;
+
+  color: black;
+
+  text-decoration: underline;
+
+  
+}
+
+a{
+
+  color: black;
+
+  text-decoration: underline;
+
+  font-size: 1.5em;
+
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+li a{
+  display: inline-block;
+  text-align: center;
+}
